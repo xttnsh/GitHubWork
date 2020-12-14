@@ -1,0 +1,7 @@
+C:\Users\46696\Desktop\Singleton Pattern\Singleton Pattern\obj\Debug\Singleton Pattern.csprojAssemblyReference.cache
+C:\Users\46696\Desktop\Singleton Pattern\Singleton Pattern\obj\Debug\Singleton Pattern.csproj.CoreCompileInputs.cache
+C:\Users\46696\Desktop\Singleton Pattern\Singleton Pattern\bin\Debug\Singleton Pattern.exe.config
+C:\Users\46696\Desktop\Singleton Pattern\Singleton Pattern\bin\Debug\Singleton Pattern.exe
+C:\Users\46696\Desktop\Singleton Pattern\Singleton Pattern\bin\Debug\Singleton Pattern.pdb
+C:\Users\46696\Desktop\Singleton Pattern\Singleton Pattern\obj\Debug\Singleton Pattern.exe
+C:\Users\46696\Desktop\Singleton Pattern\Singleton Pattern\obj\Debug\Singleton Pattern.pdb
