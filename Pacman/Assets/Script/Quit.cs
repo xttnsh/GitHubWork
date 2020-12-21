@@ -6,13 +6,13 @@ public class Quit : MonoBehaviour
 {
     public void GameQuit()
     {
-        Application.Quit();
+        Application.Quit();//退出游戏
     }
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Application.Quit();
-        }
-    }
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Q))
+    //    {
+    //        Application.Quit();
+    //    }
+    //}
 }

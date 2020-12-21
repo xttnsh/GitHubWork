@@ -6,18 +6,17 @@ using UnityEngine.UI;
 
 public class GameMgr : MonoBehaviour
 {
-    private const float WAIT_RELOAD = 5f;
+    private const float WAIT_RELOAD = 4f;
     public static GameMgr Instance;
+
+    public UIMgr uiMgr;
+    public AudioMgr audioMgr;
+
     public bool isStartGame
     {
         get;
         private set;
     }
-    public GameObject panel;
-    public GameObject gover;
-    public GameObject win;
-    public AudioSource audioSource;
-    public AudioClip audioClip;
 
     public PacdocOver pacdocOver;
 
@@ -38,7 +37,7 @@ public class GameMgr : MonoBehaviour
     public void StartGame()
     {
         isStartGame = true;
-        panel.SetActive(false);//隐藏面板
+        uiMgr.StartGameUI();
     }
     public void GameOver(bool isWin)
     {
@@ -46,16 +45,16 @@ public class GameMgr : MonoBehaviour
 
         if (isWin)
         {
-            win.SetActive(true);
+            uiMgr.GameOverUI(true);
+            audioMgr.GameOverAD(true);
             Debug.Log("游戏胜利");
         }
         else
         {
-            gover.SetActive(true);
+            uiMgr.GameOverUI(false);
+            audioMgr.GameOverAD(false);
             Debug.Log("游戏结束");
         }
-        audioSource.clip = audioClip;
-        audioSource.Play();
         Invoke("ReloadScene", WAIT_RELOAD);
     }
     void ReloadScene()
@@ -63,17 +62,8 @@ public class GameMgr : MonoBehaviour
         SceneManager.LoadScene(0);
 
     }
-    void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
-
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            StartGame(); 
-        }
         EatenDot();
 
     }

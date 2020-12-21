@@ -10,7 +10,7 @@ public class MonsterAI : MonoBehaviour
     public int currPoint;//当前点
     private SelfAnim animator;
 
-    private int childPathIdx;
+    private int childPathIdx;//
 
     void Start()
     {
@@ -37,7 +37,7 @@ public class MonsterAI : MonoBehaviour
                 if (currPoint >= allPoints.Length)
                 {
                     Debug.Log("当前巡逻结束");
-                    PathMgr.Instance.BackPath(childPathIdx);
+                    PathMgr.Instance.BackPath(childPathIdx);//
                     InitOnePath();
                 }
                 Vector3 next = allPoints[currPoint];

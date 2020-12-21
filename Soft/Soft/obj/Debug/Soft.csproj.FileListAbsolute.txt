@@ -1,0 +1,7 @@
+C:\Users\46696\Desktop\paixu\Soft\Soft\obj\Debug\Soft.csprojAssemblyReference.cache
+C:\Users\46696\Desktop\paixu\Soft\Soft\obj\Debug\Soft.csproj.CoreCompileInputs.cache
+C:\Users\46696\Desktop\paixu\Soft\Soft\bin\Debug\Soft.exe.config
+C:\Users\46696\Desktop\paixu\Soft\Soft\bin\Debug\Soft.exe
+C:\Users\46696\Desktop\paixu\Soft\Soft\bin\Debug\Soft.pdb
+C:\Users\46696\Desktop\paixu\Soft\Soft\obj\Debug\Soft.exe
+C:\Users\46696\Desktop\paixu\Soft\Soft\obj\Debug\Soft.pdb

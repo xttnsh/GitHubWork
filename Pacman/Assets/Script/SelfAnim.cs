@@ -26,7 +26,7 @@ public class SelfAnim : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();//获取Sprite渲染组件
-        ChangeDir(MoveDirAnim.Right);
+        ChangeDir(MoveDirAnim.Right);//初始动画方向为右
         StartCoroutine(PlayAnim());//协程
     }
     IEnumerator PlayAnim()
